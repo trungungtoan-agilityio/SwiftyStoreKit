@@ -78,7 +78,7 @@ class InAppProductQueryRequest: NSObject, InAppProductRequest, SKProductsRequest
     }
 
     func requestDidFinish(_ request: SKRequest) {
-
+        cancel()
     }
 
     func request(_ request: SKRequest, didFailWithError error: Error) {
