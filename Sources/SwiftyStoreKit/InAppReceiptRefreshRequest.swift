@@ -72,6 +72,7 @@ class InAppReceiptRefreshRequest: NSObject, SKRequestDelegate, InAppRequest {
          }
          }*/
         performCallback(.success)
+        cancel()
     }
     func request(_ request: SKRequest, didFailWithError error: Error) {
         // XXX could here check domain and error code to return typed exception
